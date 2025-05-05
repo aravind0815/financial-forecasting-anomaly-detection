@@ -1,99 +1,82 @@
-## 📊 Financial Forecasting & Anomaly Detection using SQL + ML
 
-### 🔍 Project Overview
+# 📊 Financial Forecasting + Anomaly Detection Dashboard
 
-This project simulates a real-world financial monitoring system. Using **SQL for data extraction**, **Python for modeling**, and **interactive dashboards** for visualization, we perform:
+An end-to-end interactive dashboard that leverages **Python**, **SQL**, and **Streamlit** to analyze, forecast, and detect anomalies in time-series financial data.
 
-* Revenue forecasting using **ARIMA** and **Facebook Prophet**
-* Anomaly detection for financial irregularities
-* Business KPI tracking in a **Streamlit dashboard**
+## 🚀 Project Highlights
 
----
+- 🔢 **Revenue & Profit KPIs**: Live key performance indicators computed from sales data.
+- 📆 **Yearly and Monthly Trends**: Interactive line and bar charts using `matplotlib` and `Streamlit`.
+- 🌍 **Geographic Insights**: Country-wise sales rankings.
+- 🚨 **Anomaly Detection**: Identifies unusual drops in sales and profit using rule-based methods.
+- 🐘 **PostgreSQL Integration**: Data is stored and queried from PostgreSQL (locally or cloud-ready).
+- 📊 **Streamlit Dashboard**: Deployed on [Streamlit Cloud](https://financial-forecasting-anomaly-detection-007.streamlit.app/).
 
-### 🎯 Problem Statement
+## 🧰 Tech Stack
 
-Organizations struggle with **unexpected revenue fluctuations** and **manual financial tracking**. This project builds an intelligent system that:
+- **Frontend:** Streamlit
+- **Backend/Data:** Pandas, SQL (PostgreSQL), pg8000, SQLAlchemy
+- **Visualization:** Matplotlib, Streamlit native charts
+- **Deployment:** Streamlit Cloud
+- **Data Source:** Cleaned financial sales dataset with regional, product-wise revenue and cost breakdown [click here to see the dataset](https://www.kaggle.com/datasets/atharvaarya25/financials)
 
-* Forecasts future revenue with high accuracy
-* Flags suspicious spikes or drops
-* Presents insights through real-time interactive dashboards
-
----
-
-### 💼 Roles Simulated
-
-| Role                          | Skills Demonstrated                                  |
-| ----------------------------- | ---------------------------------------------------- |
-| Data Scientist                | Forecasting, Time Series Analysis, Anomaly Detection |
-| Data Analyst                  | SQL querying, KPI Metrics, Dashboards                |
-| ML Engineer                   | Model pipelines, automation, data validation         |
-| Business Analyst              | Insight storytelling, anomaly reporting              |
-| LLM/GenAI Engineer (Optional) | Dashboard Q\&A Bot                                   |
-
----
-
-### 🧰 Tools & Technologies
-
-* **Languages**: Python, SQL (PostgreSQL)
-* **Libraries**: Pandas, NumPy, Prophet, statsmodels (ARIMA), Scikit-learn
-* **Visualization**: Seaborn, Matplotlib, Streamlit / Power BI
-* **Database**: PostgreSQL / SQLite (simulated)
-* **(Optional)**: LangChain + LLM for dashboard interaction
-
----
-
-### 📂 Project Structure
+## 📁 Folder Structure
 
 ```
-📁 financial_forecasting_project/
-│
+financial-forecasting-anomaly-detection/
 ├── data/
-│   └── financial_data.csv
-│
-├── sql/
-│   ├── create_tables.sql
-│   ├── kpi_queries.sql
-│   └── anomaly_detection_queries.sql
-│
+│   └── Financials_CLEAN.csv
+├── dashboard/
+│   └── app.py
 ├── notebooks/
 │   ├── 01_data_cleaning_EDA.ipynb
 │   ├── 02_sql_kpis_extraction.ipynb
 │   ├── 03_forecasting_arima_prophet.ipynb
 │   └── 04_anomaly_detection.ipynb
-│
-├── dashboard/
-│   └── app.py  (Streamlit Dashboard)
-│
-├── README.md
-└── requirements.txt
+├── sql/
+│   ├── create_tables.sql
+│   ├── kpi_queries.sql
+│   └── anomaly_detection_queries.sql
+├── requirements.txt
+└── README.md
 ```
 
+## ✅ How to Run Locally
+
+1. Clone the repo:
+```bash
+git clone https://github.com/aravind0815/financial-forecasting-anomaly-detection.git
+cd financial-forecasting-anomaly-detection
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Launch the app:
+```bash
+streamlit run dashboard/app.py
+```
+
+## 🧠 Skills Demonstrated
+
+- Data Engineering with PostgreSQL
+- Time Series Forecasting
+- Anomaly Detection Techniques
+- KPI Design & Dashboarding
+- Full Stack Data Science Project Development
+- GitHub Collaboration & Streamlit Deployment
+
+## 🔗 Live App
+
+👉 [Streamlit App](https://financial-forecasting-anomaly-detection-007.streamlit.app/)  
+👉 [GitHub Repo](https://github.com/aravind0815/financial-forecasting-anomaly-detection)
+
 ---
 
-### 📈 Key Features
+### 📌 Author
 
-* ✅ Cleaned and normalized financial time series data
-* ✅ KPI metrics using advanced SQL
-* ✅ Time Series Forecasting (ARIMA, Prophet)
-* ✅ Unsupervised anomaly detection (Z-score, Isolation Forest)
-* ✅ Streamlit dashboard with dynamic plots & insights
-* ✅ Optional: LLM-powered explanation assistant
-
----
-
-### 🚀 Future Enhancements
-
-* Integrate real-time data sources (e.g., APIs)
-* Add anomaly alerting via email or Slack
-* Deploy dashboard to Heroku or AWS
-* Include LLM bot that explains dashboard metrics
-
----
-
-### 🧠 What You’ll Learn
-
-* Real-time business analytics
-* Combining SQL + ML workflows
-* Forecasting vs anomaly detection differences
-* Creating production-ready dashboards
-* Optionally applying GenAI to analytics
+**Aravind Kalyan Sivakumar**  
+Data Science @ NJIT | Python • SQL • ML • Cloud  
+[LinkedIn](https://www.linkedin.com/in/aravindkalyan007/)
