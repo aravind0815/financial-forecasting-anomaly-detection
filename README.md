@@ -3,6 +3,26 @@
 
 An end-to-end interactive dashboard that leverages **Python**, **SQL**, and **Streamlit** to analyze, forecast, and detect anomalies in time-series financial data.
 
+## 🧠 Problem It Solves
+In many businesses, financial planning and decision-making are reactive because key financial indicators—like revenue, expenses, profit margins, or customer churn—are often reviewed too late. This leads to missed opportunities, poor resource allocation, and undetected anomalies like fraudulent spikes or revenue drops.
+
+The problem is twofold:
+- Lack of forward-looking insights: Traditional reporting tools are great at telling you what has happened, but not what will happen.
+- Undetected anomalies in financial behavior can go unnoticed until quarterly reviews or audits.
+
+## ✅ How This Project Solves It
+This project builds an intelligent forecasting system that:
+- Uses SQL and Pandas to extract, clean, and structure historical financial data
+- Applies ARIMA and Prophet models to forecast future KPIs
+- Automatically flags anomalies in trends, helping businesses take corrective actions early
+- Provides a Streamlit dashboard for stakeholders to visualize forecasts and warnings in real time
+
+## 🎯 Example Use Cases
+- A CFO can spot next quarter’s likely revenue shortfall before it happens.
+- A finance team can detect unusually high expenses and investigate faster.
+- A founder can monitor business health daily and make confident decisions.
+
+
 ## 🚀 Project Highlights
 
 - 🔢 **Revenue & Profit KPIs**: Live key performance indicators computed from sales data.
