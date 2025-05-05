@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load cleaned financial data
-df = pd.read_csv("../data/Financials_CLEAN.csv")
+df = pd.read_csv("data/Financials_CLEAN.csv")
 df['Date'] = pd.to_datetime(df['Date'])
 
 st.set_page_config(page_title='📊 Financial Forecasting Dashboard', layout='wide')
